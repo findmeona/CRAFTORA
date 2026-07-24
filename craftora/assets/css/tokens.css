@@ -1,0 +1,149 @@
+/* ==========================================================================
+   Craftora — Design Tokens
+   Source of truth: DESIGN.md (Trouwkaarten maken technical token export).
+   Brand name, copy, and layout are original to Craftora; only the raw
+   token values (color/type/space/radius/motion) come from DESIGN.md.
+
+   Accessibility adjustments (documented, not silent):
+   1. `--color-surface-base` (#000000) is reserved for dark accent surfaces
+      (header, footer, CTA banner) — NOT the page background — so we are
+      never forced into pure-white-on-pure-black body text at scale.
+   2. `--color-text-inverse` (#bfbfbf) is restricted to decorative /
+      non-text or large-scale (>=24px bold / 31px regular) use on dark
+      surfaces. It fails 4.5:1 for body text and must never be used for
+      body copy, form labels, or small UI text.
+   3. `--color-text-secondary` (#e11586) is restricted to non-text UI
+      (borders, icons, focus accents, badges >=18.66px bold) and large
+      headings. For inline links/body text on light surfaces we pair it
+      with an underline and `--color-text-primary` for the glyph color,
+      so meaning never depends on color alone (WCAG 1.4.1).
+   ========================================================================== */
+
+:root {
+  /* ---- Color: semantic surfaces ---- */
+  --color-surface-base: #000000;      /* dark accent surface: header/footer/CTA */
+  --color-surface-muted: #f8f8f8;     /* primary page background */
+  --color-surface-raised: #ffffff;    /* cards, panels, modals on muted bg */
+  --color-surface-sunken: #efefef;    /* wells, input backgrounds, skeletons */
+
+  /* ---- Color: text ---- */
+  --color-text-primary: #403c3e;      /* body copy, headings on light surfaces */
+  --color-text-secondary: #e11586;    /* accent — non-text UI + large text only */
+  --color-text-tertiary: #ffffff;     /* text on dark surfaces */
+  --color-text-inverse: #bfbfbf;      /* muted text on dark surfaces, large-scale only */
+  --color-text-muted: #6b6669;        /* AA-safe muted text on light surfaces (derived) */
+  --color-text-disabled: #9a9598;     /* disabled text on light surfaces */
+
+  /* ---- Color: borders ---- */
+  --color-border-subtle: #e2dfe0;
+  --color-border-default: #c9c5c7;
+  --color-border-strong: #403c3e;
+  --color-border-accent: #e11586;
+
+  /* ---- Color: feedback (derived, AA-checked against raised/muted) ---- */
+  --color-success-text: #1e6b30;
+  --color-success-surface: #e9f6ec;
+  --color-success-border: #a9dab5;
+  --color-error-text: #b3261e;
+  --color-error-surface: #fbeceb;
+  --color-error-border: #f0b4b0;
+  --color-warning-text: #7a5b00;
+  --color-warning-surface: #fbf3d9;
+  --color-warning-border: #e8cf7a;
+
+  /* ---- Color: interactive ---- */
+  --color-action-primary-bg: var(--color-surface-base);
+  --color-action-primary-text: var(--color-text-tertiary);
+  --color-action-primary-bg-hover: #1a1a1a;
+  --color-action-primary-bg-active: #2e2e2e;
+
+  --color-action-secondary-bg: transparent;
+  --color-action-secondary-text: var(--color-text-primary);
+  --color-action-secondary-border: var(--color-border-strong);
+  --color-action-secondary-bg-hover: var(--color-surface-sunken);
+
+  --color-focus-ring: #1a5cff; /* distinct from accent pink for reliable 3:1 non-text contrast on all surfaces */
+
+  /* ---- Typography: family ---- */
+  --font-family-primary: "Source Sans Pro", "Source Fallback", system-ui,
+    -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans",
+    sans-serif;
+
+  /* ---- Typography: scale (DESIGN.md base scale) ---- */
+  --font-size-xs: 14px;
+  --font-size-sm: 16px;
+  --font-size-md: 18px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 28px;
+  --font-size-3xl: 36px;
+  /* Extended step for hero/display use — continues the scale's growth
+     ratio (~1.28x) rather than introducing an arbitrary value. */
+  --font-size-4xl: 48px;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 600;
+  --font-weight-bold: 700;
+
+  --font-line-height-base: 26.4px;
+  --font-line-height-tight: 1.15;
+  --font-line-height-snug: 1.35;
+  --font-line-height-relaxed: 1.6;
+
+  /* ---- Spacing (DESIGN.md component scale, space-1..8) ---- */
+  --space-1: 1px;
+  --space-2: 4px;
+  --space-3: 4.5px;
+  --space-4: 8px;
+  --space-5: 10px;
+  --space-6: 12px;
+  --space-7: 15px;
+  --space-8: 16px;
+  /* Extended layout-level steps (multiples of space-8) for section and
+     page-level rhythm, which the base component scale doesn't cover. */
+  --space-9: 24px;
+  --space-10: 32px;
+  --space-11: 48px;
+  --space-12: 64px;
+  --space-13: 96px;
+
+  /* ---- Radius ---- */
+  --radius-xs: 3px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 50px; /* pill */
+
+  /* ---- Shadow (derived, subtle — matches "clean, functional" style) ---- */
+  --shadow-sm: 0 1px 2px rgba(64, 60, 62, 0.08);
+  --shadow-md: 0 4px 12px rgba(64, 60, 62, 0.10);
+  --shadow-lg: 0 12px 32px rgba(64, 60, 62, 0.16);
+  --shadow-focus: 0 0 0 3px rgba(26, 92, 255, 0.35);
+
+  /* ---- Motion ---- */
+  --motion-duration-instant: 100ms;
+  --motion-duration-fast: 300ms;
+  --motion-easing-standard: cubic-bezier(0.2, 0, 0, 1);
+
+  /* ---- Layout ---- */
+  --container-max: 1280px;
+  --container-padding-inline: var(--space-8);
+  --header-height: 72px;
+  --z-header: 100;
+  --z-mega-nav: 110;
+  --z-mobile-menu: 120;
+  --z-modal: 130;
+  --z-toast: 140;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --container-padding-inline: var(--space-10);
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --container-padding-inline: var(--space-12);
+  }
+}

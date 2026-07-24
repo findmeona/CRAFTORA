@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Craftora — Handcrafted goods, made by real makers</title>
+  <meta name="description" content="Craftora is a curated marketplace for handcrafted ceramics, woodwork, leather, and textiles made in small batches by independent makers." />
+  <link rel="canonical" href="/index.html" />
+  <meta property="og:title" content="Craftora — Handcrafted goods, made by real makers" />
+  <meta property="og:description" content="Curated, small-batch goods from independent makers. Every piece has a name attached to it." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="page">
+    <!-- ================= HEADER ================= -->
+    <header class="site-header" id="site-header" data-header>
+      <div class="container site-header__bar">
+        <button class="icon-btn site-header__menu-toggle" type="button" data-mobile-menu-toggle aria-haspopup="dialog" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="sr-only">Open menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+        </button>
+
+        <a class="site-header__logo" href="index.html">Craftora</a>
+
+        <nav class="site-header__nav mega-nav" aria-label="Primary">
+          <ul class="mega-nav__list">
+            <li class="mega-nav__item">
+              <button class="mega-nav__trigger" type="button" aria-expanded="false" aria-controls="panel-ceramics" data-mega-trigger="ceramics">
+                Ceramics
+                <svg class="mega-nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="mega-nav__panel" id="panel-ceramics" data-mega-panel="ceramics" role="group" aria-label="Ceramics categories">
+                <div class="container mega-nav__grid">
+                  <div>
+                    <p class="mega-nav__group-title">Tableware</p>
+                    <ul class="mega-nav__group-list">
+                      <li><a class="mega-nav__link" href="collection.html?cat=mugs">Mugs &amp; cups</a></li>
+                      <li><a class="mega-nav__link" href="collection.html?cat=bowls">Bowls</a></li>
+                      <li><a class="mega-nav__link" href="collection.html?cat=plates">Plates &amp; platters</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="mega-nav__group-title">Home</p>
+                    <ul class="mega-nav__group-list">
+                      <li><a class="mega-nav__link" href="collection.html?cat=vases">Vases</a></li>
+                      <li><a class="mega-nav__link" href="collection.html?cat=planters">Planters</a></li>
+                      <li><a class="mega-nav__link" href="collection.html?cat=decor">Decorative objects</a></li>
+                    </ul>
+                  </div>
+                  <figure class="mega-nav__feature">
+                    <img src="assets/images/categories/ceramics-feature.svg" alt="Hand-thrown stoneware bowls stacked on a wooden shelf" width="480" height="360" loading="lazy" />
+                    <figcaption>New this month: reclaimed-clay tableware</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </li>
+            <li class="mega-nav__item">
+              <button class="mega-nav__trigger" type="button" aria-expanded="false" aria-controls="panel-wood" data-mega-trigger="wood">
+                Woodwork
+                <svg class="mega-nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="mega-nav__panel" id="panel-wood" data-mega-panel="wood" role="group" aria-label="Woodwork categories">
+                <div class="container mega-nav__grid">
+                  <div>
+                    <p class="mega-nav__group-title">Kitchen</p>
+                    <ul class="mega-nav__group-list">
+                      <li><a class="mega-nav__link" href="collection.html?cat=boards">Cutting boards</a></li>
+                      <li><a class="mega-nav__link" href="collection.html?cat=utensils">Utensils</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="mega-nav__group-title">Furniture</p>
+                    <ul class="mega-nav__group-list">
+                      <li><a class="mega-nav__link" href="collection.html?cat=stools">Stools &amp; seating</a></li>
+                      <li><a class="mega-nav__link" href="collection.html?cat=shelving">Shelving</a></li>
+                    </ul>
+                  </div>
+                  <figure class="mega-nav__feature">
+                    <img src="assets/images/categories/wood-feature.svg" alt="Walnut cutting board with visible grain, resting on a counter" width="480" height="360" loading="lazy" />
+                    <figcaption>Featured maker: Alder &amp; Rowe Woodshop</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </li>
+            <li class="mega-nav__item">
+              <button class="mega-nav__trigger" type="button" aria-expanded="false" aria-controls="panel-leather" data-mega-trigger="leather">
+                Leather
+                <svg class="mega-nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="mega-nav__panel" id="panel-leather" data-mega-panel="leather" role="group" aria-label="Leather categories">
+                <div class="container mega-nav__grid">
+                  <div>
+                    <p class="mega-nav__group-title">Carry</p>
+                    <ul class="mega-nav__group-list">
+                      <li><a class="mega-nav__link" href="collection.html?cat=bags">Bags</a></li>
+                      <li><a class="mega-nav__link" href="collection.html?cat=wallets">Wallets</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="mega-nav__group-title">Desk</p>
+                    <ul class="mega-nav__group-list">
+                      <li><a class="mega-nav__link" href="collection.html?cat=desk-mats">Desk mats</a></li>
+                      <li><a class="mega-nav__link" href="collection.html?cat=journals">Journal covers</a></li>
+                    </ul>
+                  </div>
+                  <figure class="mega-nav__feature">
+                    <img src="assets/images/categories/leather-feature.svg" alt="Tan leather satchel with brass buckle hardware" width="480" height="360" loading="lazy" />
+                    <figcaption>Vegetable-tanned, full-grain only</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </li>
+            <li class="mega-nav__item">
+              <a class="mega-nav__trigger" href="collection.html?cat=textiles">Textiles</a>
+            </li>
+            <li class="mega-nav__item">
+              <a class="mega-nav__trigger" href="about.html">Our makers</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="site-header__search">
+          <div class="search" data-search>
+            <form class="search__form" role="search" data-search-form>
+              <label class="sr-only" for="site-search">Search products</label>
+              <svg class="search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3" stroke-linecap="round"/></svg>
+              <input class="search__input" type="search" id="site-search" name="q" placeholder="Search handcrafted goods" autocomplete="off" data-search-input />
+              <button class="search__clear" type="button" hidden data-search-clear>
+                <span class="sr-only">Clear search</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12" stroke-linecap="round"/></svg>
+              </button>
+            </form>
+            <div class="search__results" id="search-results" role="listbox" aria-label="Search suggestions" hidden data-search-results></div>
+          </div>
+        </div>
+
+        <div class="site-header__actions">
+          <button class="icon-btn" type="button" aria-label="Search" data-mobile-search-toggle>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3" stroke-linecap="round"/></svg>
+          </button>
+          <button class="icon-btn" type="button" aria-label="Sign in" data-modal-target="signin-modal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.5-6 8-6s8 2 8 6" stroke-linecap="round"/></svg>
+          </button>
+          <a class="icon-btn" href="cart.html" aria-label="Cart, 3 items" data-cart-link>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z" stroke-linejoin="round"/><path d="M9 8a3 3 0 0 1 6 0" stroke-linecap="round"/></svg>
+            <span class="icon-btn__badge" data-cart-count>3</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= MOBILE MENU ================= -->
+    <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+      <div class="mobile-menu__overlay" data-mobile-menu-close></div>
+      <div class="mobile-menu__panel" role="dialog" aria-modal="true" aria-label="Site menu">
+        <div class="mobile-menu__header">
+          <span class="site-header__logo">Craftora</span>
+          <button class="icon-btn" type="button" data-mobile-menu-close>
+            <span class="sr-only">Close menu</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+        <div class="mobile-menu__body">
+          <div class="mobile-menu__accordion">
+            <h3>
+              <button class="mobile-menu__accordion-trigger" type="button" aria-expanded="false" aria-controls="m-panel-ceramics">
+                Ceramics
+                <svg class="mega-nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </h3>
+            <div class="mobile-menu__accordion-panel" id="m-panel-ceramics" hidden>
+              <a href="collection.html?cat=mugs">Mugs &amp; cups</a>
+              <a href="collection.html?cat=bowls">Bowls</a>
+              <a href="collection.html?cat=plates">Plates &amp; platters</a>
+              <a href="collection.html?cat=vases">Vases</a>
+            </div>
+          </div>
+          <div class="mobile-menu__accordion">
+            <h3>
+              <button class="mobile-menu__accordion-trigger" type="button" aria-expanded="false" aria-controls="m-panel-wood">
+                Woodwork
+                <svg class="mega-nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </h3>
+            <div class="mobile-menu__accordion-panel" id="m-panel-wood" hidden>
+              <a href="collection.html?cat=boards">Cutting boards</a>
+              <a href="collection.html?cat=stools">Stools &amp; seating</a>
+              <a href="collection.html?cat=shelving">Shelving</a>
+            </div>
+          </div>
+          <div class="mobile-menu__accordion">
+            <h3>
+              <button class="mobile-menu__accordion-trigger" type="button" aria-expanded="false" aria-controls="m-panel-leather">
+                Leather
+                <svg class="mega-nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </h3>
+            <div class="mobile-menu__accordion-panel" id="m-panel-leather" hidden>
+              <a href="collection.html?cat=bags">Bags</a>
+              <a href="collection.html?cat=wallets">Wallets</a>
+              <a href="collection.html?cat=journals">Journal covers</a>
+            </div>
+          </div>
+          <a href="collection.html?cat=textiles" class="mobile-menu__accordion-trigger" style="text-decoration:none;">Textiles</a>
+          <a href="about.html" class="mobile-menu__accordion-trigger" style="text-decoration:none;">Our makers</a>
+        </div>
+        <div class="mobile-menu__footer">
+          <a class="btn btn--secondary btn--full" href="cart.html">View cart</a>
+          <a class="btn btn--ghost btn--full" href="contact.html">Contact us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= SIGN IN MODAL ================= -->
+    <div class="modal" id="signin-modal" data-modal="signin-modal">
+      <div class="modal__overlay" data-modal-close></div>
+      <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="signin-title">
+        <div class="modal__header">
+          <h2 class="modal__title" id="signin-title">Sign in</h2>
+          <button class="icon-btn" type="button" data-modal-close aria-label="Close dialog">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+        <div class="modal__body">
+          <form class="stack" novalidate>
+            <div class="field">
+              <label class="field__label" for="signin-email">Email address</label>
+              <input class="input" type="email" id="signin-email" name="email" autocomplete="email" />
+            </div>
+            <div class="field">
+              <label class="field__label" for="signin-password">Password</label>
+              <input class="input" type="password" id="signin-password" name="password" autocomplete="current-password" />
+            </div>
+            <button class="btn btn--primary btn--full" type="submit">Sign in</button>
+          </form>
+        </div>
+        <div class="modal__footer" style="justify-content:center;">
+          <p class="text-sm text-muted">New to Craftora? <a href="contact.html" style="color:var(--color-text-secondary); text-decoration:underline;">Get in touch</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= MAIN ================= -->
+    <main class="page__main" id="main-content">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero__grid">
+          <div>
+            <p class="hero__eyebrow">Small-batch, made to order</p>
+            <h1 class="hero__heading">Objects made by hands you could actually shake</h1>
+            <p class="hero__copy">Every piece in the Craftora catalog is signed to a real workshop — no anonymous factory runs, no dropshipping. Browse ceramics, woodwork, leather, and textiles from 60+ independent makers.</p>
+            <div class="hero__actions">
+              <a class="btn btn--primary btn--lg" href="collection.html">Shop the collection</a>
+              <a class="btn btn--secondary btn--lg" href="about.html">Meet the makers</a>
+            </div>
+          </div>
+          <div class="hero__media">
+            <img src="assets/images/hero/hero-workshop.svg" alt="Potter's hands shaping a stoneware bowl on a wheel in a sunlit workshop" width="640" height="480" loading="eager" fetchpriority="high" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature cards -->
+      <section class="section container" aria-labelledby="features-heading">
+        <h2 class="sr-only" id="features-heading">Why shop with Craftora</h2>
+        <div class="grid grid--4">
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="feature-card__title">Verified makers</h3>
+            <p class="feature-card__copy">Every workshop is visited or video-verified before their goods go live.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="feature-card__title">Materials disclosed</h3>
+            <p class="feature-card__copy">Full material and origin breakdown on every product page — no vague "premium" labels.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a4 4 0 0 1 8 0v2" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="feature-card__title">Packed to last</h3>
+            <p class="feature-card__copy">Reusable, low-waste packaging designed with each maker for their specific goods.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 8v4l3 3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9"/></svg>
+            </div>
+            <h3 class="feature-card__title">30-day returns</h3>
+            <p class="feature-card__copy">Not right for your space? Send it back within 30 days for a full refund.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Category cards -->
+      <section class="section container" aria-labelledby="categories-heading">
+        <div class="section__header">
+          <p class="section__eyebrow">Browse by craft</p>
+          <h2 id="categories-heading">Four disciplines, one standard</h2>
+        </div>
+        <div class="grid grid--4">
+          <a class="category-card" href="collection.html?cat=ceramics">
+            <img class="category-card__img" src="assets/images/categories/cat-ceramics.svg" alt="" width="480" height="640" loading="lazy" />
+            <div class="category-card__overlay"></div>
+            <span class="category-card__label">Ceramics</span>
+          </a>
+          <a class="category-card" href="collection.html?cat=woodwork">
+            <img class="category-card__img" src="assets/images/categories/cat-wood.svg" alt="" width="480" height="640" loading="lazy" />
+            <div class="category-card__overlay"></div>
+            <span class="category-card__label">Woodwork</span>
+          </a>
+          <a class="category-card" href="collection.html?cat=leather">
+            <img class="category-card__img" src="assets/images/categories/cat-leather.svg" alt="" width="480" height="640" loading="lazy" />
+            <div class="category-card__overlay"></div>
+            <span class="category-card__label">Leather</span>
+          </a>
+          <a class="category-card" href="collection.html?cat=textiles">
+            <img class="category-card__img" src="assets/images/categories/cat-textiles.svg" alt="" width="480" height="640" loading="lazy" />
+            <div class="category-card__overlay"></div>
+            <span class="category-card__label">Textiles</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Product grid -->
+      <section class="section container" aria-labelledby="new-heading">
+        <div class="section__header section__header--split">
+          <div>
+            <p class="section__eyebrow">Just landed</p>
+            <h2 id="new-heading">New this month</h2>
+          </div>
+          <a class="btn btn--ghost" href="collection.html">View all products</a>
+        </div>
+
+        <div class="grid grid--4" data-product-grid>
+          <!-- Product card x8 -->
+          <article class="product-card">
+            <div class="product-card__media-wrap">
+              <span class="product-card__badge">New</span>
+              <button class="product-card__wishlist" type="button" aria-pressed="false" aria-label="Add Speckled Stoneware Mug to wishlist">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
+              </button>
+              <a class="product-card__link" href="product.html?id=speckled-mug"><img class="product-card__img" src="assets/images/products/product-01.svg" alt="Speckled stoneware mug with natural clay glaze" width="400" height="400" loading="lazy" /></a>
+              <div class="product-card__quick-add">
+                <button class="btn btn--secondary btn--full btn--sm" type="button" data-quick-add="speckled-mug" style="background-color:var(--color-surface-raised);">Quick add</button>
+              </div>
+            </div>
+            <p class="product-card__maker">Alder &amp; Rowe Woodshop</p>
+            <h3 class="product-card__title">Speckled Stoneware Mug</h3>
+            <div class="product-card__price-row">
+              <span class="product-card__price">€38</span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__media-wrap">
+              <span class="product-card__badge product-card__badge--sale">−15%</span>
+              <button class="product-card__wishlist" type="button" aria-pressed="false" aria-label="Add Walnut Serving Board to wishlist">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
+              </button>
+              <a class="product-card__link" href="product.html?id=walnut-board"><img class="product-card__img" src="assets/images/products/product-02.svg" alt="Long walnut serving board with visible wood grain" width="400" height="400" loading="lazy" /></a>
+              <div class="product-card__quick-add">
+                <button class="btn btn--secondary btn--full btn--sm" type="button" data-quick-add="walnut-board" style="background-color:var(--color-surface-raised);">Quick add</button>
+              </div>
+            </div>
+            <p class="product-card__maker">Hearthstone Ceramics</p>
+            <h3 class="product-card__title">Walnut Serving Board</h3>
+            <div class="product-card__price-row">
+              <span class="product-card__price">€68</span>
+              <span class="product-card__price--was">€80</span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__media-wrap">
+              <button class="product-card__wishlist" type="button" aria-pressed="false" aria-label="Add Vegetable-Tanned Card Wallet to wishlist">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
+              </button>
+              <a class="product-card__link" href="product.html?id=leather-wallet"><img class="product-card__img" src="assets/images/products/product-03.svg" alt="Tan leather card wallet with visible stitching" width="400" height="400" loading="lazy" /></a>
+              <div class="product-card__quick-add">
+                <button class="btn btn--secondary btn--full btn--sm" type="button" data-quick-add="leather-wallet" style="background-color:var(--color-surface-raised);">Quick add</button>
+              </div>
+            </div>
+            <p class="product-card__maker">Fen &amp; Bramble Leatherworks</p>
+            <h3 class="product-card__title">Vegetable-Tanned Card Wallet</h3>
+            <div class="product-card__price-row">
+              <span class="product-card__price">€52</span>
+            </div>
+          </article>
+
+          <article class="product-card product-card--out-of-stock">
+            <div class="product-card__media-wrap">
+              <span class="product-card__stock-label">Sold out</span>
+              <button class="product-card__wishlist" type="button" aria-pressed="false" aria-label="Add Handwoven Wool Throw to wishlist">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
+              </button>
+              <a class="product-card__link" href="product.html?id=wool-throw"><img class="product-card__img" src="assets/images/products/product-04.svg" alt="Cream handwoven wool throw blanket folded on a bench" width="400" height="400" loading="lazy" /></a>
+            </div>
+            <p class="product-card__maker">Loom &amp; Field Textiles</p>
+            <h3 class="product-card__title">Handwoven Wool Throw</h3>
+            <div class="product-card__price-row">
+              <span class="product-card__price">€145</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section container" aria-labelledby="testimonials-heading" style="background-color:var(--color-surface-raised); border-radius:var(--radius-lg);">
+        <div class="section__header">
+          <p class="section__eyebrow">From the community</p>
+          <h2 id="testimonials-heading">What people say after unboxing</h2>
+        </div>
+        <div class="grid grid--3">
+          <div class="testimonial">
+            <div class="testimonial__rating" aria-label="Rated 5 out of 5 stars">
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.6 5.9L19 7.6l-4.6 4.3L15.6 19 10 15.6 4.4 19l1.2-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.6 5.9L19 7.6l-4.6 4.3L15.6 19 10 15.6 4.4 19l1.2-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.6 5.9L19 7.6l-4.6 4.3L15.6 19 10 15.6 4.4 19l1.2-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.6 5.9L19 7.6l-4.6 4.3L15.6 19 10 15.6 4.4 19l1.2-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.6 5.9L19 7.6l-4.6 4.3L15.6 19 10 15.6 4.4 19l1.2-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+            </div>
+            <p class="testimonial__quote">The mug arrived with a little card from the potter explaining her glaze recipe. That's the kind of detail I didn't know I wanted.</p>
+            <div class="testimonial__author">
+              <img class="testimonial__avatar" src="assets/images/icons/avatar-01.svg" alt="" width="40" height="40" loading="lazy" />
+              <div>
+                <p class="testimonial__name">Marta H.</p>
+                <p class="testimonial__role">Verified buyer</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__rating" aria-label="Rated 5 out of 5 stars">
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.6 5.9L19 7.6l-4.6 4.3L15.6 19 10 15.6 4.4 19l1.2-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.6 5.9L19 7.6l-4.6 4.3L15.6 19 10 15.6 4.4 19l1.2-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.6 5.9L19 7.6l-4.6 4.3L15.6 19 10 15.6 4.4 19l1.2-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.6 5.9L19 7.6l-4.6 4.3L15.6 19 10 15.6 4.4 19l1.2-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.6 5.9L19 7.6l-4.6 4.3L15.6 19 10 15.6 4.4 19l1.2-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+            </div>
+            <p class="testimonial__quote">Ordered the walnut board as a housewarming gift. The recipient texted me a photo before I even got home.</p>
+            <div class="testimonial__author">
+              <img class="testimonial__avatar" src="assets/images/icons/avatar-02.svg" alt="" width="40" height="40" loading="lazy" />
+              <div>
+                <p class="testimonial__name">Dov R.</p>
+                <p class="testimonial__role">Verified buyer</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__rating" aria-label="Rated 4 out of 5 stars">
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.6 5.9L19 7.6l-4.6 4.3L15.6 19 10 15.6 4.4 19l1.2-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.6 5.9L19 7.6l-4.6 4.3L15.6 19 10 15.6 4.4 19l1.2-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.6 5.9L19 7.6l-4.6 4.3L15.6 19 10 15.6 4.4 19l1.2-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1l2.6 5.9L19 7.6l-4.6 4.3L15.6 19 10 15.6 4.4 19l1.2-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" aria-hidden="true"><path d="M10 1l2.6 5.9L19 7.6l-4.6 4.3L15.6 19 10 15.6 4.4 19l1.2-7.1L1 7.6l6.4-.7L10 1z"/></svg>
+            </div>
+            <p class="testimonial__quote">Packaging alone made this feel worth the price — everything was wrapped in fabric offcuts instead of plastic.</p>
+            <div class="testimonial__author">
+              <img class="testimonial__avatar" src="assets/images/icons/avatar-03.svg" alt="" width="40" height="40" loading="lazy" />
+              <div>
+                <p class="testimonial__name">Priya S.</p>
+                <p class="testimonial__role">Verified buyer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="section container">
+        <div class="newsletter">
+          <div class="newsletter__copy">
+            <h2 class="newsletter__title">Get first pick of new drops</h2>
+            <p class="newsletter__desc">Once a month, a short note about new makers and small-batch restocks. No spam, unsubscribe anytime.</p>
+          </div>
+          <form class="newsletter__form" data-newsletter-form novalidate>
+            <label class="sr-only" for="newsletter-email">Email address</label>
+            <input class="newsletter__input" type="email" id="newsletter-email" name="email" placeholder="you@example.com" required autocomplete="email" aria-describedby="newsletter-status" />
+            <button class="btn btn--secondary" type="submit" style="color:#fff;border-color:rgba(255,255,255,0.4);">
+              <span data-btn-label>Subscribe</span>
+            </button>
+          </form>
+        </div>
+        <p class="newsletter__status" id="newsletter-status" role="status" aria-live="polite" data-newsletter-status></p>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+      <div class="container site-footer__top">
+        <div>
+          <p class="site-footer__brand">Craftora</p>
+          <p class="site-footer__tagline">A marketplace for goods made by people who'll tell you exactly how they made them.</p>
+        </div>
+        <div>
+          <p class="site-footer__heading">Shop</p>
+          <ul class="site-footer__list">
+            <li><a href="collection.html?cat=ceramics">Ceramics</a></li>
+            <li><a href="collection.html?cat=woodwork">Woodwork</a></li>
+            <li><a href="collection.html?cat=leather">Leather</a></li>
+            <li><a href="collection.html?cat=textiles">Textiles</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="site-footer__heading">Company</p>
+          <ul class="site-footer__list">
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html#makers">Our makers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="site-footer__heading">Support</p>
+          <ul class="site-footer__list">
+            <li><a href="contact.html">Shipping &amp; returns</a></li>
+            <li><a href="contact.html">Care guides</a></li>
+            <li><a href="contact.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container site-footer__bottom">
+        <p>© 2026 Craftora. All rights reserved.</p>
+        <div class="site-footer__socials">
+          <a href="#" aria-label="Craftora on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="Craftora on Pinterest"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9 17l2-9m2 0c3 0 4 2 4 4s-1 4-3 4-2-1-2-2" stroke-linecap="round"/></svg></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true" data-toast-region></div>
+
+  <script src="assets/js/utils/dom.js"></script>
+  <script src="assets/js/utils/a11y.js"></script>
+  <script src="assets/js/modules/mega-nav.js"></script>
+  <script src="assets/js/modules/search.js"></script>
+  <script src="assets/js/modules/cart.js"></script>
+  <script src="assets/js/modules/modal.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
