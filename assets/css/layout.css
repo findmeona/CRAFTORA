@@ -1,0 +1,129 @@
+/* ==========================================================================
+   Craftora — Layout
+   Container, grid primitives, and page-section rhythm. Mobile-first.
+   ========================================================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-inline);
+}
+
+.section {
+  padding-block: var(--space-11);
+}
+
+@media (min-width: 768px) {
+  .section { padding-block: var(--space-12); }
+}
+
+@media (min-width: 1280px) {
+  .section { padding-block: var(--space-13); }
+}
+
+.section__header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-bottom: var(--space-10);
+  max-width: 60ch;
+}
+
+@media (min-width: 768px) {
+  .section__header--split {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: none;
+  }
+}
+
+.section__eyebrow {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+/* ---- Grids ---- */
+.grid {
+  display: grid;
+  gap: var(--space-9);
+}
+
+.grid--2 { grid-template-columns: repeat(1, 1fr); }
+.grid--3 { grid-template-columns: repeat(1, 1fr); }
+.grid--4 { grid-template-columns: repeat(2, 1fr); }
+
+@media (min-width: 600px) {
+  .grid--2 { grid-template-columns: repeat(2, 1fr); }
+  .grid--3 { grid-template-columns: repeat(2, 1fr); }
+  .grid--4 { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .grid--3 { grid-template-columns: repeat(3, 1fr); }
+  .grid--4 { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (min-width: 1280px) {
+  .grid--2 { gap: var(--space-11); }
+  .grid--3 { gap: var(--space-10); }
+  .grid--4 { gap: var(--space-9); }
+}
+
+/* ---- Page shell ---- */
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+
+.page__main {
+  flex: 1 1 auto;
+}
+
+/* ---- Two-column layout (PDP, Collection with filters) ---- */
+.layout-split {
+  display: grid;
+  gap: var(--space-10);
+}
+
+@media (min-width: 900px) {
+  .layout-split--filters {
+    grid-template-columns: 260px 1fr;
+    align-items: start;
+  }
+  .layout-split--pdp {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+@media (min-width: 1280px) {
+  .layout-split--pdp {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: var(--space-13);
+  }
+}
+
+/* ---- Breadcrumb row ---- */
+.breadcrumb-row {
+  padding-block: var(--space-8);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+/* ---- Stack utility for form/detail rhythm ---- */
+.stack > * + * {
+  margin-top: var(--space-8);
+}
+
+.stack--tight > * + * {
+  margin-top: var(--space-6);
+}
+
+.stack--loose > * + * {
+  margin-top: var(--space-10);
+}
