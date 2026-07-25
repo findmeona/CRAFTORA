@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Craftora</title>
+  <meta name="description" content="Get in touch with the Craftora team about an order, a product, or applying as a maker." />
+  <link rel="canonical" href="/contact.html" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="page">
+    <!-- ================= HEADER ================= -->
+    <header class="site-header" id="site-header" data-header>
+      <div class="container site-header__bar">
+        <button class="icon-btn site-header__menu-toggle" type="button" data-mobile-menu-toggle aria-haspopup="dialog" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="sr-only">Open menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+        </button>
+
+        <a class="site-header__logo" href="index.html">Craftora</a>
+
+        <nav class="site-header__nav mega-nav" aria-label="Primary">
+          <ul class="mega-nav__list">
+            <li class="mega-nav__item">
+              <button class="mega-nav__trigger" type="button" aria-expanded="false" aria-controls="panel-ceramics" data-mega-trigger="ceramics">
+                Ceramics
+                <svg class="mega-nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="mega-nav__panel" id="panel-ceramics" data-mega-panel="ceramics" role="group" aria-label="Ceramics categories">
+                <div class="container mega-nav__grid">
+                  <div>
+                    <p class="mega-nav__group-title">Tableware</p>
+                    <ul class="mega-nav__group-list">
+                      <li><a class="mega-nav__link" href="collection.html?cat=mugs">Mugs &amp; cups</a></li>
+                      <li><a class="mega-nav__link" href="collection.html?cat=bowls">Bowls</a></li>
+                      <li><a class="mega-nav__link" href="collection.html?cat=plates">Plates &amp; platters</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="mega-nav__group-title">Home</p>
+                    <ul class="mega-nav__group-list">
+                      <li><a class="mega-nav__link" href="collection.html?cat=vases">Vases</a></li>
+                      <li><a class="mega-nav__link" href="collection.html?cat=planters">Planters</a></li>
+                      <li><a class="mega-nav__link" href="collection.html?cat=decor">Decorative objects</a></li>
+                    </ul>
+                  </div>
+                  <figure class="mega-nav__feature">
+                    <img src="assets/images/categories/ceramics-feature.svg" alt="Hand-thrown stoneware bowls stacked on a wooden shelf" width="480" height="360" loading="lazy" />
+                    <figcaption>New this month: reclaimed-clay tableware</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </li>
+            <li class="mega-nav__item">
+              <button class="mega-nav__trigger" type="button" aria-expanded="false" aria-controls="panel-wood" data-mega-trigger="wood">
+                Woodwork
+                <svg class="mega-nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="mega-nav__panel" id="panel-wood" data-mega-panel="wood" role="group" aria-label="Woodwork categories">
+                <div class="container mega-nav__grid">
+                  <div>
+                    <p class="mega-nav__group-title">Kitchen</p>
+                    <ul class="mega-nav__group-list">
+                      <li><a class="mega-nav__link" href="collection.html?cat=boards">Cutting boards</a></li>
+                      <li><a class="mega-nav__link" href="collection.html?cat=utensils">Utensils</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="mega-nav__group-title">Furniture</p>
+                    <ul class="mega-nav__group-list">
+                      <li><a class="mega-nav__link" href="collection.html?cat=stools">Stools &amp; seating</a></li>
+                      <li><a class="mega-nav__link" href="collection.html?cat=shelving">Shelving</a></li>
+                    </ul>
+                  </div>
+                  <figure class="mega-nav__feature">
+                    <img src="assets/images/categories/wood-feature.svg" alt="Walnut cutting board with visible grain, resting on a counter" width="480" height="360" loading="lazy" />
+                    <figcaption>Featured maker: Alder &amp; Rowe Woodshop</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </li>
+            <li class="mega-nav__item">
+              <button class="mega-nav__trigger" type="button" aria-expanded="false" aria-controls="panel-leather" data-mega-trigger="leather">
+                Leather
+                <svg class="mega-nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="mega-nav__panel" id="panel-leather" data-mega-panel="leather" role="group" aria-label="Leather categories">
+                <div class="container mega-nav__grid">
+                  <div>
+                    <p class="mega-nav__group-title">Carry</p>
+                    <ul class="mega-nav__group-list">
+                      <li><a class="mega-nav__link" href="collection.html?cat=bags">Bags</a></li>
+                      <li><a class="mega-nav__link" href="collection.html?cat=wallets">Wallets</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="mega-nav__group-title">Desk</p>
+                    <ul class="mega-nav__group-list">
+                      <li><a class="mega-nav__link" href="collection.html?cat=desk-mats">Desk mats</a></li>
+                      <li><a class="mega-nav__link" href="collection.html?cat=journals">Journal covers</a></li>
+                    </ul>
+                  </div>
+                  <figure class="mega-nav__feature">
+                    <img src="assets/images/categories/leather-feature.svg" alt="Tan leather satchel with brass buckle hardware" width="480" height="360" loading="lazy" />
+                    <figcaption>Vegetable-tanned, full-grain only</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </li>
+            <li class="mega-nav__item">
+              <a class="mega-nav__trigger" href="collection.html?cat=textiles">Textiles</a>
+            </li>
+            <li class="mega-nav__item">
+              <a class="mega-nav__trigger" href="about.html">Our makers</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="site-header__search">
+          <div class="search" data-search>
+            <form class="search__form" role="search" data-search-form>
+              <label class="sr-only" for="site-search">Search products</label>
+              <svg class="search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3" stroke-linecap="round"/></svg>
+              <input class="search__input" type="search" id="site-search" name="q" placeholder="Search handcrafted goods" autocomplete="off" data-search-input />
+              <button class="search__clear" type="button" hidden data-search-clear>
+                <span class="sr-only">Clear search</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12" stroke-linecap="round"/></svg>
+              </button>
+            </form>
+            <div class="search__results" id="search-results" role="listbox" aria-label="Search suggestions" hidden data-search-results></div>
+          </div>
+        </div>
+
+        <div class="site-header__actions">
+          <button class="icon-btn" type="button" aria-label="Search" data-mobile-search-toggle>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3" stroke-linecap="round"/></svg>
+          </button>
+          <button class="icon-btn" type="button" aria-label="Sign in" data-modal-target="signin-modal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.5-6 8-6s8 2 8 6" stroke-linecap="round"/></svg>
+          </button>
+          <a class="icon-btn" href="cart.html" aria-label="Cart, 3 items" data-cart-link>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z" stroke-linejoin="round"/><path d="M9 8a3 3 0 0 1 6 0" stroke-linecap="round"/></svg>
+            <span class="icon-btn__badge" data-cart-count>3</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= MOBILE MENU ================= -->
+    <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+      <div class="mobile-menu__overlay" data-mobile-menu-close></div>
+      <div class="mobile-menu__panel" role="dialog" aria-modal="true" aria-label="Site menu">
+        <div class="mobile-menu__header">
+          <span class="site-header__logo">Craftora</span>
+          <button class="icon-btn" type="button" data-mobile-menu-close>
+            <span class="sr-only">Close menu</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+        <div class="mobile-menu__body">
+          <div class="mobile-menu__accordion">
+            <h3>
+              <button class="mobile-menu__accordion-trigger" type="button" aria-expanded="false" aria-controls="m-panel-ceramics">
+                Ceramics
+                <svg class="mega-nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </h3>
+            <div class="mobile-menu__accordion-panel" id="m-panel-ceramics" hidden>
+              <a href="collection.html?cat=mugs">Mugs &amp; cups</a>
+              <a href="collection.html?cat=bowls">Bowls</a>
+              <a href="collection.html?cat=plates">Plates &amp; platters</a>
+              <a href="collection.html?cat=vases">Vases</a>
+            </div>
+          </div>
+          <div class="mobile-menu__accordion">
+            <h3>
+              <button class="mobile-menu__accordion-trigger" type="button" aria-expanded="false" aria-controls="m-panel-wood">
+                Woodwork
+                <svg class="mega-nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </h3>
+            <div class="mobile-menu__accordion-panel" id="m-panel-wood" hidden>
+              <a href="collection.html?cat=boards">Cutting boards</a>
+              <a href="collection.html?cat=stools">Stools &amp; seating</a>
+              <a href="collection.html?cat=shelving">Shelving</a>
+            </div>
+          </div>
+          <div class="mobile-menu__accordion">
+            <h3>
+              <button class="mobile-menu__accordion-trigger" type="button" aria-expanded="false" aria-controls="m-panel-leather">
+                Leather
+                <svg class="mega-nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </h3>
+            <div class="mobile-menu__accordion-panel" id="m-panel-leather" hidden>
+              <a href="collection.html?cat=bags">Bags</a>
+              <a href="collection.html?cat=wallets">Wallets</a>
+              <a href="collection.html?cat=journals">Journal covers</a>
+            </div>
+          </div>
+          <a href="collection.html?cat=textiles" class="mobile-menu__accordion-trigger" style="text-decoration:none;">Textiles</a>
+          <a href="about.html" class="mobile-menu__accordion-trigger" style="text-decoration:none;">Our makers</a>
+        </div>
+        <div class="mobile-menu__footer">
+          <a class="btn btn--secondary btn--full" href="cart.html">View cart</a>
+          <a class="btn btn--ghost btn--full" href="contact.html">Contact us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= SIGN IN MODAL ================= -->
+    <div class="modal" id="signin-modal" data-modal="signin-modal">
+      <div class="modal__overlay" data-modal-close></div>
+      <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="signin-title">
+        <div class="modal__header">
+          <h2 class="modal__title" id="signin-title">Sign in</h2>
+          <button class="icon-btn" type="button" data-modal-close aria-label="Close dialog">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+        <div class="modal__body">
+          <form class="stack" novalidate>
+            <div class="field">
+              <label class="field__label" for="signin-email">Email address</label>
+              <input class="input" type="email" id="signin-email" name="email" autocomplete="email" />
+            </div>
+            <div class="field">
+              <label class="field__label" for="signin-password">Password</label>
+              <input class="input" type="password" id="signin-password" name="password" autocomplete="current-password" />
+            </div>
+            <button class="btn btn--primary btn--full" type="submit">Sign in</button>
+          </form>
+        </div>
+        <div class="modal__footer" style="justify-content:center;">
+          <p class="text-sm text-muted">New to Craftora? <a href="contact.html" style="color:var(--color-text-secondary); text-decoration:underline;">Get in touch</a></p>
+        </div>
+      </div>
+    </div>
+
+        <main class="page__main" id="main-content">
+      <div class="container breadcrumb-row">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Contact</span>
+        </nav>
+      </div>
+
+      <section class="section container">
+        <div class="layout-split layout-split--pdp">
+          <div>
+            <p class="section__eyebrow">Get in touch</p>
+            <h1 style="margin-bottom: var(--space-8);">We reply within two business days</h1>
+            <p class="text-muted" style="margin-bottom: var(--space-10); max-width: 48ch;">Questions about an order, a maker, or care instructions for something you bought — this form reaches a real person on the Craftora team, not a bot.</p>
+
+            <form class="stack" data-contact-form novalidate>
+              <div class="field">
+                <label class="field__label" for="contact-name">Full name <span class="field__required" aria-hidden="true">*</span></label>
+                <input class="input" type="text" id="contact-name" name="name" data-required autocomplete="name" aria-describedby="contact-name-error" />
+                <p class="field__error" id="contact-name-error" data-field-error hidden>
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01" stroke-linecap="round"/></svg>
+                  Enter your name.
+                </p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="contact-email">Email address <span class="field__required" aria-hidden="true">*</span></label>
+                <input class="input" type="email" id="contact-email" name="email" data-required autocomplete="email" aria-describedby="contact-email-error" />
+                <p class="field__error" id="contact-email-error" data-field-error hidden>
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01" stroke-linecap="round"/></svg>
+                  Enter a valid email address.
+                </p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="contact-topic">Topic</label>
+                <select class="select" id="contact-topic" name="topic">
+                  <option value="order">An existing order</option>
+                  <option value="product">A product question</option>
+                  <option value="maker">Applying as a maker</option>
+                  <option value="other">Something else</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="contact-message">Message <span class="field__required" aria-hidden="true">*</span></label>
+                <textarea class="textarea" id="contact-message" name="message" data-required aria-describedby="contact-message-error"></textarea>
+                <p class="field__error" id="contact-message-error" data-field-error hidden>
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01" stroke-linecap="round"/></svg>
+                  Let us know what you need help with.
+                </p>
+              </div>
+
+              <button class="btn btn--primary btn--lg" type="submit">Send message</button>
+            </form>
+
+            <div class="testimonial" data-contact-success hidden tabindex="-1" style="margin-top: var(--space-9);">
+              <p class="testimonial__quote">Thanks — your message has been sent. We reply within two business days, usually much sooner.</p>
+            </div>
+          </div>
+
+          <aside>
+            <div class="feature-card" style="margin-bottom: var(--space-8);">
+              <h3 class="feature-card__title">Order support</h3>
+              <p class="feature-card__copy">Include your order number for the fastest response. Find it in your confirmation email.</p>
+            </div>
+            <div class="feature-card" style="margin-bottom: var(--space-8);">
+              <h3 class="feature-card__title">Maker applications</h3>
+              <p class="feature-card__copy">Include your workshop name, craft, and a few photos of your work — we review weekly.</p>
+            </div>
+            <div class="feature-card">
+              <h3 class="feature-card__title">Response time</h3>
+              <p class="feature-card__copy">Monday–Friday, replies typically land within one business day.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+<!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+      <div class="container site-footer__top">
+        <div>
+          <p class="site-footer__brand">Craftora</p>
+          <p class="site-footer__tagline">A marketplace for goods made by people who'll tell you exactly how they made them.</p>
+        </div>
+        <div>
+          <p class="site-footer__heading">Shop</p>
+          <ul class="site-footer__list">
+            <li><a href="collection.html?cat=ceramics">Ceramics</a></li>
+            <li><a href="collection.html?cat=woodwork">Woodwork</a></li>
+            <li><a href="collection.html?cat=leather">Leather</a></li>
+            <li><a href="collection.html?cat=textiles">Textiles</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="site-footer__heading">Company</p>
+          <ul class="site-footer__list">
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html#makers">Our makers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="site-footer__heading">Support</p>
+          <ul class="site-footer__list">
+            <li><a href="contact.html">Shipping &amp; returns</a></li>
+            <li><a href="contact.html">Care guides</a></li>
+            <li><a href="contact.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container site-footer__bottom">
+        <p>© 2026 Craftora. All rights reserved.</p>
+        <div class="site-footer__socials">
+          <a href="#" aria-label="Craftora on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="Craftora on Pinterest"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9 17l2-9m2 0c3 0 4 2 4 4s-1 4-3 4-2-1-2-2" stroke-linecap="round"/></svg></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true" data-toast-region></div>
+
+  <script src="assets/js/utils/dom.js"></script>
+  <script src="assets/js/utils/a11y.js"></script>
+  <script src="assets/js/modules/mega-nav.js"></script>
+  <script src="assets/js/modules/search.js"></script>
+  <script src="assets/js/modules/cart.js"></script>
+  <script src="assets/js/modules/modal.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
